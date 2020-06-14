@@ -25,5 +25,31 @@ img{
   .feature-bg{
     width : 60vw;
   }
-  
+  span{
+    position:absolute;
+    background: rgba(175, 169, 169, 0.6);
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    border-radius: 100%;
+    top: -40px;
+    left:-40px;
+    margin-left: 50%;
+    font-size: 1.8rem;
+  }
+  .card{
+    margin-bottom: 0;
+  }
 }
+
+/* welcome section  /overwrite bootstrap*/
+.card-text{
+  font-size: 1.2rem;
+}
+
+.card{
+  margin-bottom: 20px;
+}
+
+/* price tags  */
+
