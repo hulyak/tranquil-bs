@@ -1,0 +1,29 @@
+body{
+  font-family: 'Merriweather', serif;
+}
+
+/* header image and background  */
+img{
+  max-width: 100%;
+}
+.feature-bg{
+  background: rgba(255, 255, 255, 0.3);
+  width: 100vw;
+  border-radius: 10px;
+}
+
+.feature-text{
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.header_img{
+  min-height: 25vh;
+}
+
+@media screen and (min-width: 768px){
+  .feature-bg{
+    width : 60vw;
+  }
+  
+}
