@@ -35,13 +35,23 @@
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
          <span class="navbar-toggler-icon"></span>
        </button>
-       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-         <ul class="navbar-nav">
+       <!-- <div class="collapse navbar-collapse " id="navbarNav"> -->
+         <!-- <ul class="navbar-nav">
            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
            <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-         </ul>
-       </div>
+         </ul> -->
+         <!-- https://github.com/wp-bootstrap/wp-bootstrap-navwalker -->
+         <?php wp_nav_menu( array(
+    'theme_location'  => 'primary',
+    'depth'           => 1, // 1 = no dropdowns, 2 = with dropdowns.
+    'container'       => 'div',
+    'container_class' => 'collapse navbar-collapse justify-content-end',
+    'container_id'    => 'navbarNav',
+    'menu_class'      => 'navbar-nav',
+    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+    'walker'          => new WP_Bootstrap_Navwalker(),
+) ); ?>
+       <!-- </div> -->
      </nav>
 
      <section class="container-fluid">
