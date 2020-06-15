@@ -12,27 +12,27 @@ The main template file
        <!-- offset to 3 to make the header centered -->
        <div class="col-md-6 offset-md-3"> 
          <h3>Welcome to Tranquil Spa</h3>
-         <img src="images/divider-purple.png" alt="divider" class="w-25">
+         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-purple.png" alt="divider" class="w-25">
        </div>
       </div>
       
        <div class="row mt-4 d-flex justify-content-around">
        <div class="col-sm-3">
-        <img src="images/makeup.jpg" alt="makeup image" class="card-img-top rounded-circle">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/makeup.jpg" alt="makeup image" class="card-img-top rounded-circle">
         <div class="card-body">
           <p class="card-text">Hair &amp; make up </p>
         </div>
        </div>
 
        <div class="col-sm-3">
-        <img src="images/candles.jpg" alt="candles image" class="card-img-top rounded-circle">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/candles.jpg" alt="candles image" class="card-img-top rounded-circle">
         <div class="card-body">
           <p class="card-text">Spa facilities </p>
         </div>
        </div>
 
        <div class="col-sm-3">
-        <img src="images/retreat.jpg" alt="retreat image" class="card-img-top rounded-circle">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/retreat.jpg" alt="retreat image" class="card-img-top rounded-circle">
         <div class="card-body">
           <p class="card-text">Take a tour</p>
         </div>
@@ -46,7 +46,7 @@ The main template file
     <div class="row">
       <div class="col-md-6 offset-md-3"> 
         <h3 class="text-light">Latest Spa Offers</h3>
-        <img src="images/divider-silver.png" alt="divider" class="pb-4 w-25">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-silver.png" alt="divider" class="pb-4 w-25">
     </div>
    </div>
 
@@ -107,7 +107,7 @@ The main template file
     <div class="row">
       <div class="col-sm-6 offset-sm-3">
         <h3>About Us</h3>
-        <img src="images/divider-purple.png" alt="divider" class="w-25">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-purple.png" alt="divider" class="w-25">
       </div>
     </div>
     <div class="row mt-2">
@@ -127,13 +127,13 @@ The main template file
     <div class="row">
       <div class="col-sm-6 offset-sm-3 text-center">
         <h3 class="text-light">Price List</h3>
-        <img src="images/divider-silver.png" alt="divider" class="pb-4 w-25">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/divider-silver.png" alt="divider" class="pb-4 w-25">
       </div>
     </div>
 
     <div class="row my-4">
       <div class="col-sm-8">
-        <img src="images/massage.jpg" alt="massage picture">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/massage.jpg" alt="massage picture">
       </div>
       <div class="col-sm-4">
         <h4 class="title text-center">Massages</h4>
@@ -159,11 +159,11 @@ The main template file
         </ul>
     </div>
     <div class="col-sm-8">
-      <img src="images/facial.jpg" alt="facial picture">
+      <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/facial.jpg" alt="facial picture">
     </div>
 
     <div class="col-sm-8">
-        <img src="images/cosmetics.jpg" alt="cosmetics picture">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/cosmetics.jpg" alt="cosmetics picture">
       </div>
       <div class="col-sm-4">
         <h4 class="title text-center">Hair &amp; make up</h4>
