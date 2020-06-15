@@ -44,4 +44,18 @@ function new_excerpt_text(){
 }
 add_filter('excerpt_more' , 'new_excerpt_text');
 
+// FOR FRONT PAGE TITLE 
+// _e = echo
+// FOR BLOG PAGE USE is_home
+//else for 404 page or pages don't have a custom title
+function featureText(){
+  if(is_front_page() ) {
+    _e("FULL RESPONSIVE <br> PREMIUM SPA THEME <br> FOR WORDPRESS");
+  }elseif(is_home() ){
+    _e('TRANQUIL SPA OFFICIAL BLOG');
+  }else {
+    _e('FULL RESPONSIVE <br> PREMIUM SPA THEME <br> FOR WORDPRESS');
+  }
+
+}
 ?>
