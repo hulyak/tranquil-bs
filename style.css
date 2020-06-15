@@ -1,6 +1,21 @@
+/*
+Theme Name: Tranquil WP
+Theme URI: http://tranquilspatheme.com
+Author: Hulya Karakaya
+Author URI: http://wordpress.org/
+Description: Tranquil spa theme for wordpress 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: translation-ready, right-sidebar, custom-header, featured-images, custom-menu
+Text Domain: tranquilwp
+
+*/
+
 body{
   font-family: 'Merriweather', serif;
 }
+/* https://codex.wordpress.org/Theme_Development */
 
 /* header image and background  */
 img{
