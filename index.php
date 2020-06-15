@@ -3,54 +3,8 @@
 The main template file
 */
 ?>
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- FONT AWESOME -->
-   <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
-
-     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-     <link rel="stylesheet" href="css/custom.css">
-
-    <title>Tranquil Spa</title>
-  </head>
-  <body>
-   <header>
-     <nav class="navbar navbar-expand-md navbar-light bg-light">
-       <a href="" class="navbar-brand">Tranquil Spa</a>
-       <!-- dropdown -->
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-         <ul class="navbar-nav">
-           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-           <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-         </ul>
-       </div>
-     </nav>
-
-     <section class="container-fluid">
-        <div class="row position-relative d-flex justify-content-center align-items-center text-center">
-          <img src="images/lake.jpg" alt="lake background" class="header_img">
-          <div class="position-absolute feature-bg">
-            <p class="feature-text">FULL RESPONSIVE <br>PREMIUM SPA THEME</br> FOR WORDPRESS</p>
-          </div>
-        </div>
-     </section>
-
-   </header>
+<?php get_header() ?>
 
    <!-- welcome section -->
    <div class="container-fluid text-center py-5">
@@ -224,50 +178,4 @@ The main template file
   </div>
 </div>
 
-  <!-- FOOTER SECTION -->
-<footer class="container-fluid py-5">
-<div class="row">
- <div class="col-sm-4"> 
-  <h5>STAY CONNECTED:</h5>
-  <form>
-    <div class="form-row form-group">
-        <div class="col-md-8"> 
-          <input type="email" class="form-control" placeholder="Email address">
-        </div>
-        <div class="col-md-4">
-          <button type="submit" class="btn btn-primary">Sign up!
-            <i class="fas fa-angle-double-right"></i> 
-          </button>
-        </div>
-    </div>
-  </form>
-  <!-- social media icons -->
-<i class="fab fa-facebook-square fa-2x"></i>
-<i class="fab fa-twitter-square fa-2x"></i>
-<i class="fab fa-instagram-square fa-2x"></i>
-<i class="fab fa-pinterest-square fa-2x"></i>
- </div>
-
- <div class="col-sm-4">
-   <h5>Our Setting:</h5>
-   <p> quisquam amet quod necessitatibus porro error sed fugit est maiores repudiandae doloremque magni doloribus obcaecati earum molestias, eius eum dolores quo architecto molestiae.</p>
- </div>
-
- <div class="col-sm-4">
-   <h5>Navigation</h5>
-   <ul class="list-group">
-     <li class="list-group-item"><a href="blog.html">Blog</a></li>
-     <li class="list-group-item"><a href="contact.html">Contact Us</a></li>
-     <li class="list-group-item"><a href="">Privacy</a></li>
-   </ul>
-
- </div>
-</div>
-</footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" ></script>
-  </body>
-</html>
+ <?php get_footer() ?>
