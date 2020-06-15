@@ -34,48 +34,6 @@ The main template file
         </div>
         <?php endwhile; else :  ?>
 
- 
-
-    <aside class="col-sm-4">
-      <div class="py-3">
-        <h4 class="font-italic">About</h4>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, corporis. Accusamus blanditiis corporis autem magnam consectetur dolorum optio molestiae ex fuga praesentium mollitia, dicta voluptatem. Numquam distinctio aut laboriosam odit.
-        <hr>
-      </p>
-      </div>
-
-      <div class="py-3">
-        <h4 class="font-italic">Archives</h4>
-        <ol class="list-unstyled mb-0">
-          <li><a href="">June 2020</a></li>
-          <li><a href="">May 2020</a></li>
-          <li><a href="">April 2020</a></li>
-        </ol>
-      </div>
-
-      <div class="py-3">
-        <h4 class="font-italic">Categories</h4>
-        <ol class="list-unstyled mb-0">
-          <li><a href="">News</a></li>
-          <li><a href="">Offers</a></li>
-        </ol>
-      </div>
-
-      <div class="py-3">
-        <h4 class="font-italic">Follow Us</h4>
-        <i class="fab fa-facebook-square fa-2x"></i>
-        <i class="fab fa-twitter-square fa-2x"></i>
-        <i class="fab fa-instagram-square fa-2x"></i>
-        <i class="fab fa-pinterest-square fa-2x"></i>
-      </div>
-
-    </aside>
-
-
-    </div> <!-- closing row -->
-   </main>  <!-- container -->
-
-
 
     <p><?php _e('Sorry, no posts matched your criteria'); ?></p>
 <?php    
@@ -87,8 +45,15 @@ endif;
             <li><?php previous_posts_link(); ?></li>
           </ul>
         </nav>
-      </div> 
 
+      </div> 
+<!-- sidebar-dark.php  -> get_sidebar('dark') -->
+      <aside class="col-sm-4">
+      <?php get_sidebar(); ?>
+    </aside>
+    
+    </div> <!-- closing row -->
+   </main>  <!-- container -->
 
 <!-- Footer section -->
 <?php get_footer() ?>
