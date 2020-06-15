@@ -35,5 +35,13 @@ function tranquil_scripts() {
   wp_enqueue_script('bootstrap-js', get_template_directory_uri() .'/js/bootstrap.min.js' , array('jquery'), null, true );
 
 }
-add_action('wp_enqueue_scripts' , 'tranquil_scripts')
+add_action('wp_enqueue_scripts' , 'tranquil_scripts');
+
+// https://developer.wordpress.org/reference/hooks/excerpt_more/
+// remove [] at the end of blog posts
+function new_excerpt_text(){
+   return '...';
+}
+add_filter('excerpt_more' , 'new_excerpt_text');
+
 ?>
