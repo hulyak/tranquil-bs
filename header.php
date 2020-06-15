@@ -12,16 +12,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- FONT AWESOME -->
-   <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
+   <!-- <link rel="stylesheet" href="css/font-awesome/css/all.min.css"> -->
 
      <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet"> -->
     
     <!-- Custom CSS -->
-     <link rel="stylesheet" href="css/custom.css">
+     <!-- <link rel="stylesheet" href="css/custom.css"> --> 
 
     <!-- <title>Tranquil Spa</title> -->
     <?php wp_head(); ?>
