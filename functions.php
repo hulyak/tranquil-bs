@@ -48,10 +48,11 @@ add_filter('excerpt_more' , 'new_excerpt_text');
 // _e = echo
 // FOR BLOG PAGE USE is_home
 //else for 404 page or pages don't have a custom title
+// is_single refers to each blog page single.php
 function featureText(){
   if(is_front_page() ) {
     _e("FULL RESPONSIVE <br> PREMIUM SPA THEME <br> FOR WORDPRESS");
-  }elseif(is_home() ){
+  }elseif(is_home() || is_single()){
     _e('TRANQUIL SPA OFFICIAL BLOG');
   }else {
     _e('FULL RESPONSIVE <br> PREMIUM SPA THEME <br> FOR WORDPRESS');
