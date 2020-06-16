@@ -24,7 +24,8 @@
             <p class="d-inline"><?php the_tags('Tagged: ', ' ~ ')?></p>
           </div>
           <p><?php the_content() ?></p>
-            
+          <!-- show other  pages  -->
+            <?php wp_link_pages(); ?>
         </div>
         <?php endwhile; else :  ?>
 
@@ -33,10 +34,18 @@
 <?php    
 endif;
 ?>
+
+<!-- create comment section under post -->
+<?php 
+if(comments_open() || get_comments_number()):
+  comments_template();
+endif;
+?>
+
     <nav>
           <ul class="nav">
-            <li><?php next_posts_link(); ?></li> &nbsp; 
-            <li><?php previous_posts_link(); ?></li>
+            <li><?php next_post_link(); ?></li> &nbsp; 
+            <li><?php previous_post_link(); ?></li>
           </ul>
         </nav>
 
